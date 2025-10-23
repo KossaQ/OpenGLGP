@@ -14,6 +14,9 @@ list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 include(global_settings)
 
+add_compile_options(-Wno-error=unknown-pragmas)
+
+
 # ---- Dependencies ----
 add_subdirectory(thirdparty)
 
